@@ -22,9 +22,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
-
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
@@ -33,8 +30,11 @@ PRODUCT_PACKAGES += \
     FrameworksResProduct \
     FrameworksResTarget \
     LineageApertureAppCommon \
+    LineageSdkOverlayCommon \
+    LineageSettingsProviderOverlayCommon \
     NcmTetheringOverlay \
     SettingsProviderResCommon \
+    SettingsResCommon \
     SystemUIResCommon \
     Launcher3ResCommon \
     TelephonyResCommon \
@@ -167,6 +167,9 @@ $(call inherit-product, hardware/dolby/dolby.mk)
 
 # Viper4Android FX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
+# Camera extension for torch slider
+$(call soong_config_set,libcameraservice,ext_lib,//$(LOCAL_PATH):libcameraservice_extension.motorola_sm6375)
 
 # Health
 PRODUCT_PACKAGES += \
