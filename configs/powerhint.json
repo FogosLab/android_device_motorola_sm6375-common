@@ -637,7 +637,7 @@
       "PowerHint": "GAME_LOADING",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-       "Value": "9999999"
+      "Value": "9999999"
     },
     {
       "PowerHint": "GAME",
@@ -649,7 +649,7 @@
       "PowerHint": "GAME",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-       "Value": "9999999"
+      "Value": "9999999"
     },
     {
       "PowerHint": "GAME",
@@ -668,6 +668,48 @@
       "Node": "CPUBigClusterDownRateLimit",
       "Duration": 0,
       "Value": "2000"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "CPUBWMinFreq",
+      "Duration": 0,
+      "Value": "7980"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "CPUDDRLatLittleMinFreq",
+      "Duration": 0,
+      "Value": "7980"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "CPUDDRLatBigMinFreq",
+      "Duration": 0,
+      "Value": "7980"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "CPUDDRLatfloorLittleMinFreq",
+      "Duration": 0,
+      "Value": "7980"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "CPUDDRLatfloorBigMinFreq",
+      "Duration": 0,
+      "Value": "7980"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "L3LittleClusterMinFreq",
+      "Duration": 0,
+      "Value": "1497600000"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "L3BigClusterMinFreq",
+      "Duration": 0,
+      "Value": "1497600000"
     }
   ]
 }
